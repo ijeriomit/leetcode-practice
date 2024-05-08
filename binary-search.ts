@@ -1,4 +1,4 @@
-import { printOutput } from "./utils";
+import { printOutputs } from "./utils";
 
 /**
     Given an array of integers nums which is sorted in ascending order, 
@@ -37,4 +37,4 @@ function search(nums: number[], target: number): number {
     return ans;
 };
 
-printOutput([[-1,0,3,5,9,12],[-1,0,3,5,9,12]], search, [9, 2]);
+printOutputs([[-1,0,3,5,9,12],[-1,0,3,5,9,12]], search, [9, 2]);

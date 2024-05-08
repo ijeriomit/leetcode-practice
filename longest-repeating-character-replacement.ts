@@ -1,4 +1,4 @@
-import { printOutput } from "./utils";
+import { printOutputs } from "./utils";
 
 /**
 You are given a string s and an integer k. You can choose any character of the string and 
@@ -44,4 +44,4 @@ function characterReplacement(s: string, k: number): number {
     return longest;
   };
 
-  printOutput(["ABAB", "AABABBA"], characterReplacement, [2,1]);
+  printOutputs(["ABAB", "AABABBA"], characterReplacement, [2,1]);

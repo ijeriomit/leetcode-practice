@@ -1,4 +1,4 @@
-import { printOutput } from "./utils";
+import { printOutputs } from "./utils";
 
 /**
     Given a signed 32-bit integer x, return x with its digits reversed. 
@@ -34,4 +34,4 @@ function reverse(x: number): number {
     return 0;
 };
 
-printOutput([123, -123, 120], reverse);
+printOutputs([123, -123, 120], reverse);

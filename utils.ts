@@ -1,4 +1,4 @@
-export function printOutput(inputs: any[], fn : Function, targets? : any[]) {
+export function printOutputs(inputs: any[], fn : Function, targets? : any[]) {
     for(let i = 0; i < inputs.length; i++) {
         if(targets) {
             console.log(fn(inputs[i], targets[i]));
@@ -8,7 +8,7 @@ export function printOutput(inputs: any[], fn : Function, targets? : any[]) {
     }
 }
 
-export function printListNode(inputs: any[], fn: Function, targets?: any[]) {
+export function printListNodes(inputs: any[], fn: Function, targets?: any[]) {
     for(let i = 0; i < inputs.length; i++) {
         let listNode: ListNode|null = buildList(inputs[i]);
         if(targets) {
@@ -26,6 +26,28 @@ export function printListNode(inputs: any[], fn: Function, targets?: any[]) {
    
 }
 
+export function printTreeNodes(inputs: any[], fn: Function, targets?: any[]) {
+
+    // const printTree = (root: TreeNode|null) => {
+    //     if (!root) {
+    //         return;
+    //     }
+    //     printTree(root.left);
+    //     console.log(root.val + " ");
+    //     printTree(root.right);
+    // }
+
+    for(let i = 0; i < inputs.length; i++) {
+        if(targets){
+            console.log(fn(buildTree(inputs[i]), targets));
+        }
+        else {
+            console.log(fn(buildTree(inputs[i])));
+        }
+    }
+    
+}
+
 function buildList(input:any[]): ListNode {
     const head = new ListNode(input[0]);
     let curr = head;
@@ -36,11 +58,49 @@ function buildList(input:any[]): ListNode {
     return head;
 }
 
+function buildTree(input: any[]): TreeNode | null{
+    if (input.length === 0) {
+        return null;
+    }
+    let root = new TreeNode(input[0]);
+    let q = [root];
+    let i = 1;
+    while (i < input.length) {
+        let curr = q.shift()!;
+        if (i < input.length) {
+            curr.left = new TreeNode(input[i++]);
+            q.push(curr.left);
+        }
+        if (i < input.length) {
+            curr.right = new TreeNode(input[i++]);
+            q.push(curr.right);
+        }
+    }
+    return root;
+    
+}
+
 export class ListNode {
-    val: number
-    next: ListNode | null
-    constructor(val?: number, next?: ListNode | null) {
+    val: number;
+    next: ListNode | null;
+    random: ListNode | null;
+    constructor(val?: number, next?: ListNode | null, random?: ListNode | null) {
         this.val = (val===undefined ? 0 : val);
         this.next = (next===undefined ? null : next);
+        this.random =(next===undefined ? null : next);
      }
 }
+
+export class TreeNode {
+    val: number;
+    left: TreeNode | null;
+    right: TreeNode | null;
+
+    constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null ) {
+        this.val = val ?? 0;
+        this.right = right ?? null;
+        this.left = left ?? null;
+    }   
+
+ }
+

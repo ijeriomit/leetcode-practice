@@ -19,7 +19,7 @@
  * Explanation: The sum of -1 and 0 is -1. Therefore index1 = 1, index2 = 2. We return [1, 2].
  */
 
-import { printOutput } from "./utils";
+import { printOutputs } from "./utils";
 
 function twoSum2(numbers: number[], target: number): number[] {
     if(numbers.length == 2) {
@@ -41,4 +41,4 @@ function twoSum2(numbers: number[], target: number): number[] {
     return [left+1, right+1];
 };
 
-printOutput([[2,7,11,15], [2,3,4], [-1,0]], twoSum2, [9,6,-1]);
+printOutputs([[2,7,11,15], [2,3,4], [-1,0]], twoSum2, [9,6,-1]);

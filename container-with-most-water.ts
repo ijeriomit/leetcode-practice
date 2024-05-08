@@ -13,7 +13,7 @@ Example 2:
 Input: height = [1,1]
 Output: 1
 */
-import { printOutput } from "./utils";
+import { printOutputs } from "./utils";
 
 function maxArea(height: number[]): number {
     let maxArea = 0;
@@ -43,4 +43,4 @@ function calculateArea(height: number, width: number) : number {
     return height * width;
 }
 
-printOutput([[1,8,6,2,5,4,8,3,7], [1,1]], maxArea);
+printOutputs([[1,8,6,2,5,4,8,3,7], [1,1]], maxArea);

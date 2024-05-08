@@ -1,4 +1,4 @@
-import { printListNode, ListNode } from "./utils";
+import { printListNodes, ListNode } from "./utils";
 
 /**
     You are given the heads of two sorted linked lists list1 and list2.
@@ -41,4 +41,4 @@ function mergeTwoLists(list1: ListNode | null, list2: ListNode | null): ListNode
     
 };
 
-printListNode([[1,2,4], [], []], mergeTwoLists, [[[1,3,4]],[],[0]]);
+printListNodes([[1,2,4], [], []], mergeTwoLists, [[[1,3,4]],[],[0]]);

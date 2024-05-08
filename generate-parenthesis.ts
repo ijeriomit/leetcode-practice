@@ -1,4 +1,4 @@
-import { printOutput } from "./utils";
+import { printOutputs } from "./utils";
 
 /** 
 Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
@@ -29,4 +29,4 @@ function generateParenthesis(n: number): string[] {
     return combos;
 };
 
-printOutput([3,1], generateParenthesis);
+printOutputs([3,1], generateParenthesis);

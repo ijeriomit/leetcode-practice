@@ -1,4 +1,4 @@
-import {ListNode, printListNode } from "./utils";
+import {ListNode, printListNodes } from "./utils";
 
 /**
 Given the head of a singly linked list, reverse the list, and return the reversed list.
@@ -25,4 +25,4 @@ function reverseList(head: ListNode | null): ListNode | null {
     return slow;
 };
 
-printListNode([[1,2,3,4,5],[1,2]], reverseList);
+printListNodes([[1,2,3,4,5],[1,2]], reverseList);

@@ -1,4 +1,4 @@
-import { printOutput } from "./utils";
+import { printOutputs } from "./utils";
 
 /**
 Given a string s, find the length of the longest 
@@ -53,4 +53,4 @@ function lengthOfLongestSubstring(s: string): number {
     return max;
 };
 
-printOutput(["abcabcbb", "bbbbb", "pwwkew"], lengthOfLongestSubstring);
+printOutputs(["abcabcbb", "bbbbb", "pwwkew"], lengthOfLongestSubstring);

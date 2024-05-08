@@ -19,7 +19,7 @@ Input: s = "(]"
 Output: false
 */
 
-import { printOutput } from "./utils";
+import { printOutputs } from "./utils";
 
 function isValid(s: string): boolean {
     let isValid = false;
@@ -59,4 +59,4 @@ function isValid(s: string): boolean {
     
 };
 
-printOutput(['()', '()[]{}', '(]'], isValid);
+printOutputs(['()', '()[]{}', '(]'], isValid);

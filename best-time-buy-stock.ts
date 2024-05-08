@@ -1,4 +1,4 @@
-import { printOutput } from "./utils";
+import { printOutputs } from "./utils";
 
 /**
 You are given an array prices where prices[i] is the price of a given stock on the ith day.
@@ -36,4 +36,4 @@ function maxProfit(prices: number[]): number {
     return maxProfit;
 };
 
-printOutput([[7,1,5,3,6,4],[7,6,4,3,1]], maxProfit);
+printOutputs([[7,1,5,3,6,4],[7,6,4,3,1]], maxProfit);

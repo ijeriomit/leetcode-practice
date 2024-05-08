@@ -14,7 +14,7 @@ Output: [[""]]
 Input: strs = ["a"]
 Output: [["a"]]
 **/
-import { printOutput } from "./utils";
+import { printOutputs } from "./utils";
 
 function groupAnagrams(strs: string[]): string[][] {
     const anagrams: string[][] = [];

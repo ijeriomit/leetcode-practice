@@ -1,4 +1,4 @@
-import { ListNode, printListNode } from "./utils";
+import { ListNode, printListNodes } from "./utils";
 
 /**
 Given the head of a linked list, remove the nth node from the end of the list and return its head.
@@ -26,17 +26,17 @@ Output: [1]
  *     }
  * }
  */
-tery
+
 function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
     if(!head?.next){
         return head?.next ?? null;
     }
-    let fast : ListNode| null = head;
-    let slow :  ListNode| null = head;
+    let fast : ListNode|null = head;
+    let slow :  ListNode|null = head;
     for(let i=0; i < n; i++) {
         fast = fast?.next ?? null;
     }
-    if(!fast){
+    if(!fast) {
         return head.next;
     }
     while(fast?.next != null) {
@@ -49,4 +49,4 @@ function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
     return head;
 };
 
-printListNode([[1,2,3,4,5], [1], [1,2]], removeNthFromEnd, [2,1,1]);
+printListNodes([[1,2,3,4,5], [1], [1,2]], removeNthFromEnd, [2,1,1]);

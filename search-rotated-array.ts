@@ -1,4 +1,4 @@
-import { printOutput } from "./utils";
+import { printOutputs } from "./utils";
 
 /**
 There is an integer array nums sorted in ascending order (with distinct values).
@@ -72,4 +72,4 @@ function findPivot(nums: number[]): number {
     return pivot;
 }
 
-printOutput([[4,5,6,7,0,1,2], [4,5,6,7,0,1,2], [1]], search, [0,3,0]);
+printOutputs([[4,5,6,7,0,1,2], [4,5,6,7,0,1,2], [1]], search, [0,3,0]);

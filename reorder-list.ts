@@ -14,7 +14,7 @@ Input: head = [1,2,3,4,5]
 Output: [1,5,2,4,3]
 */
 
-import { ListNode, printListNode } from "./utils";
+import { ListNode, printListNodes } from "./utils";
 
 function reorderList(head: ListNode | null): ListNode|null {
     if(head?.next == null) {
@@ -71,4 +71,4 @@ function getListLength(node: ListNode|null): number {
     return len;
 }
 
-printListNode([[1,2,3,4], [1,2,3,4,5]],reorderList);
+printListNodes([[1,2,3,4], [1,2,3,4,5]],reorderList);

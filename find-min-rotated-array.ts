@@ -1,4 +1,4 @@
-import { printOutput } from "./utils";
+import { printOutputs } from "./utils";
 
 /**
 Suppose an array of length n sorted in ascending order is rotated between 1 and n times. For example, the array nums = [0,1,2,4,5,6,7] might become:
@@ -46,4 +46,4 @@ function findMin(nums: number[]): number {
     return min;
 };
 
-printOutput([[3,4,5,1,2], [4,5,6,7,0,1,2], [11,13,15,17]], findMin);
+printOutputs([[3,4,5,1,2], [4,5,6,7,0,1,2], [11,13,15,17]], findMin);
