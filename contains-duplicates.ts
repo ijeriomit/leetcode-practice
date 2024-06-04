@@ -26,7 +26,7 @@
 //[1,2,3,4] -> false
 //[1,1,1,3,3,4,3,2,4,2] -> true
 
-import { printOutput } from "./utils";
+import { printOutputs } from "./utils";
 
 function containsDuplicate(nums: number[]): boolean {
     let duplicatesFound = false;
@@ -39,6 +39,6 @@ function containsDuplicate(nums: number[]): boolean {
     return duplicatesFound;
 };
 
-printOutput([[1,2,3,1],[1,2,3,4], [1,1,1,3,3,4,3,2,4,2]], containsDuplicate);
+printOutputs([[1,2,3,1],[1,2,3,4], [1,1,1,3,3,4,3,2,4,2]], containsDuplicate);
 
 

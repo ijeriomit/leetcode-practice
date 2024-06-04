@@ -63,4 +63,4 @@ function groupAnagrams(strs: string[]): string[][] {
 };
 
 const inputs: string[][] = [["eat","tea","tan","ate","nat","bat"],[""], ["a"]];
-printOutput(inputs, groupAnagrams);
+printOutputs(inputs, groupAnagrams);

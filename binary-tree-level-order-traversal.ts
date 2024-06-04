@@ -51,7 +51,7 @@ function levelOrderBottom(root: TreeNode): number[][]  {
     for(let i = Object.entries(out).length; i >= 1; i--) {
         result.push(out[i]);
     }
-    return result
+    return result;
 };
 
 printOutputs([[3,9,20,null,null,15,7], [1], []], levelOrderBottom);

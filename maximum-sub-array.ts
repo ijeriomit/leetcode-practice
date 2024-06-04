@@ -26,12 +26,12 @@ function maxSubArray(nums: number[]) {
     let result = runSum;
     for(let i=1; i < nums.length; i++){
         if(runSum + nums[i] >= nums[i]){
-            runSum += nums[i]
+            runSum += nums[i];
         }
         else{
-            runSum = nums[i]
+            runSum = nums[i];
         }
-        result = Math.max(result, runSum)
+        result = Math.max(result, runSum);
     }
     return result;
 };
